@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Мой менеджер задач</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>📋 Мой менеджер</h1>
+        <button id="logoutBtn" class="logout-btn">🚪 Выйти</button>
+
+        <div class="section">
+            <h2>📦 Мои заказы</h2>
+            <div id="ordersList"></div>
+            <button id="showOrderFormBtn" class="btn-add">➕ Добавить заказ</button>
+            <div id="orderFormContainer" style="display: none;">
+                <input type="number" id="orderAmount" placeholder="Сумма" />
+                <button id="createOrderBtn">Создать</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✅ Мои задачи</h2>
+            <div id="tasksList"></div>
+            <button id="showTaskFormBtn" class="btn-add">➕ Добавить задачу</button>
+            <div id="taskFormContainer" style="display: none;">
+                <input type="text" id="taskTitle" placeholder="Название" />
+                <input type="text" id="taskDescription" placeholder="Описание" />
+                <select id="taskStatus">
+                    <option value="todo">📌 Todo</option>
+                    <option value="in_progress">⏳ В процессе</option>
+                    <option value="done">✅ Готово</option>
+                </select>
+                <button id="createTaskBtn">Создать</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
